@@ -33,7 +33,7 @@ plot(datetime,submetering1,type="n", xlab = "", ylab="Energy sub metering")
 lines(datetime,submetering1)
 lines(datetime,submetering2,col="red")
 lines(datetime,submetering3,col="blue")
-legend("topright",lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex=0.5)
+legend("topright",lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex=0.7)
 
 #fourth plot
 plot(datetime,global_reactive_power,type="n", xlab = "datetime", ylab="Global_reactive_power")
