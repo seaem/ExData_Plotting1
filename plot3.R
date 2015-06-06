@@ -1,11 +1,5 @@
-# download zip file  (for windows machine. curl not required)
-
-url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
-destination<-"file.zip"
-download.file(url,destination)
-
 #read table and subset data
-table<-read.table(unz(destination,"file.txt"),sep=";",header=TRUE)
+table<-read.table("household_power_consumption.txt",sep=";",header=TRUE)
 table$Date<-as.Date(table$Date,"%d/%m/%Y")
 table<-subset(table,table$Date=="2007-02-01" | table$Date=="2007-02-02")
 
