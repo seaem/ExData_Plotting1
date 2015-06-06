@@ -27,5 +27,5 @@ lines(datetime,submetering3,col="blue")
 legend("topright",lty=1,col=c("black","red","blue"),legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),cex=0.5)
 
 #png file
-dev.copy(png,file="plot2.png")
+dev.copy(png,file="plot3.png")
 dev.off()
